@@ -6,12 +6,12 @@ package com.tetras;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-class SupermanTest {
+class SafetyCarTest {
     @Test
     void testSingleton() {
 
-        Superman monSuperman1 = new Superman();
-        Superman monSuperman2 = new Superman();
-        assertEquals(monSuperman1, monSuperman2);
+        SafetyCar mySafetyCar = SafetyCar.GetInstance();
+        SafetyCar mySafetyCar2 = SafetyCar.GetInstance();;
+        assertEquals(mySafetyCar, mySafetyCar2);
     }
 }
