@@ -10,8 +10,9 @@ class SafetyCarTest {
     @Test
     void testSingleton() {
 
-        SafetyCar mySafetyCar = SafetyCar.GetInstance();
-        SafetyCar mySafetyCar2 = SafetyCar.GetInstance();;
+        SafetyCar mySafetyCar = SafetyCar.getInstance();
+        SafetyCar mySafetyCar2 = SafetyCar.getInstance();
+        ;
         assertEquals(mySafetyCar, mySafetyCar2);
     }
 }

@@ -1,5 +1,10 @@
 package com.tetras;
 
-public class IVoitureDeFormuleUn {
+public interface IVoitureDeFormuleUn {
 
+    public static final String COULEURDEF = "WHITE";
+
+    public void accelerer();
+    public void tourner();
+    public void freiner();
 }
