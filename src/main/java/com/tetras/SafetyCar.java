@@ -2,14 +2,14 @@ package com.tetras;
 
 public class SafetyCar {
 
-    public static SafetyCar instance = new SafetyCar();
+    public static final SafetyCar instance = new SafetyCar();
 
-    public SafetyCar()
+    private SafetyCar()
     {
-
+        //Singleton non instanciable via constructeur
     }
 
-    public SafetyCar GetInstance()
+    public static SafetyCar getInstance()
     {
         return instance;
     }
