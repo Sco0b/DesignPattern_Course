@@ -18,4 +18,9 @@ public class CircuitDeCourse {
         voitures.add(voiture);
     }
 
+    public int GetNbVoitures()
+    {
+        return voitures.size();
+    }
+    
 }

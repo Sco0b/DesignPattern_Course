@@ -2,11 +2,11 @@ package com.tetras;
 
 public class VoitureFerrari implements IVoitureDeFormuleUn {
 
-    public static final String COULEURDEF = "Rouge";
+    public static final String COULEUR = "Rouge";
 
     public VoitureFerrari()
     {
-        // TODO
+        // TODO 
     }
 
     @Override
@@ -25,5 +25,10 @@ public class VoitureFerrari implements IVoitureDeFormuleUn {
     public void freiner() {
         // TODO Auto-generated method stub
 
+    }
+    
+    @Override
+    public String getCouleur() {
+        return COULEUR;
     }
 }
